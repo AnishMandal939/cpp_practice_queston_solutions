@@ -241,59 +241,59 @@ int main()
 // {
 //     // body of the class
 // };
-// #include <iostream>
-// using namespace std;
-// template <class T>
-// void sort(T a[], int n)
-// {
-//     T temp;
-//     for (int i = 0; i < n; i++)
-//     {
-//         for (int j = i + 1; j < n; j++)
-//         {
-//             if (a[i] > a[j])
-//             {
-//                 temp = a[i];
-//                 a[i] = a[j];
-//                 a[j] = temp;
-//             }
-//         }
-//     }
-// }
-// int main()
-// {
-//     int a[10], n;
-//     cout << "Enter the number of elements in the array: ";
-//     cin >> n;
-//     cout << "Enter the elements of the array: ";
-//     for (int i = 0; i < n; i++)
-//     {
-//         cin >> a[i];
-//     }
-//     sort(a, n);
-//     cout << "The sorted array is: ";
-//     for (int i = 0; i < n; i++)
-//     {
-//         cout << a[i] << " ";
-//     }
-//     cout << endl;
-//     float b[10];
-//     cout << "Enter the number of elements in the array: ";
-//     cin >> n;
-//     cout << "Enter the elements of the array: ";
-//     for (int i = 0; i < n; i++)
-//     {
-//         cin >> b[i];
-//     }
-//     sort(b, n);
-//     cout << "The sorted array is: ";
-//     for (int i = 0; i < n; i++)
-//     {
-//         cout << b[i] << " ";
-//     }
-//     cout << endl;
-//     return 0;
-// }
+#include <iostream>
+using namespace std;
+template <class T>
+void sort(T a[], int n)
+{
+    T temp;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = i + 1; j < n; j++)
+        {
+            if (a[i] > a[j])
+            {
+                temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+    }
+}
+int main()
+{
+    int a[10], n;
+    cout << "Enter the number of elements in the array: ";
+    cin >> n;
+    cout << "Enter the elements of the array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a[i];
+    }
+    sort(a, n);
+    cout << "The sorted array is: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << a[i] << " ";
+    }
+    cout << endl;
+    float b[10];
+    cout << "Enter the number of elements in the array: ";
+    cin >> n;
+    cout << "Enter the elements of the array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> b[i];
+    }
+    sort(b, n);
+    cout << "The sorted array is: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << b[i] << " ";
+    }
+    cout << endl;
+    return 0;
+}
 
 
 // Q - Short notes :

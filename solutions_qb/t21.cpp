@@ -252,8 +252,8 @@ int main()
 
 
 // Q - Create a class called information with member data to store name , age, and address of a person. Create another class called degree gained. From these two classes, derive a class called employee which in addition to above attributes contains other attributes professional status. Use member functions to read and print all the attributes of an employee.
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 class Information
 {
     string name;
